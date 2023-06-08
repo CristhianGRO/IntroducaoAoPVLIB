@@ -31,7 +31,7 @@ inverter = cec_inverters['ABB__MICRO_0_25_I_OUTD_US_208__208V_']
 #Definindo o modelo de desempenho de acordo com a temperatura de costa de célula.
 temperature_parameters = TEMPERATURE_MODEL_PARAMETERS['sapm']['open_rack_glass_glass']
 
-#Definindo o sistema PV, com as informaçães de ângulo, ajuste de temperatura, modelo de módulo e de inversor, bem como definindo a quantidade de módulos utilizados por string e a quantidade d strings adotadas.
+#Definindo o sistema PV, com as informaçães de ângulo, ajuste de temperatura, modelo de módulo e de inversor, bem como definindo a quantidade de módulos utilizados por string e a quantidade de strings adotadas.
 system = PVSystem(surface_tilt=45,surface_azimuth=180,
                   module_parameters = module, 
                   inverter_parameters = inverter,
