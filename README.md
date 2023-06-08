@@ -1,6 +1,6 @@
 <div align="center">
-    <img src="../.github/Imagens/pvlib_logo.png" style="width: 20vw; margin-right: 8vw">
-    <img src="../.github/Imagens/ufmt.png" style="width: 18vw">
+    <img src=".github/Imagens/pvlib_logo.png" style="width: 20vw; margin-right: 8vw">
+    <img src=".github/Imagens/ufmt.png" style="width: 18vw">
 
     Usando a biblioteca PVLIB para a obtenção de curvas de geração fotovoltaicas realísticas
 </div>
