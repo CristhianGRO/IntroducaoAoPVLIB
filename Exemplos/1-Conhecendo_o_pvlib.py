@@ -53,5 +53,3 @@ clear_sky = location.get_clearsky(times)
 modelChain.run_model(clear_sky)
 modelChain.results.ac.plot(figsize=(16,9))
 plt.show()
-
-

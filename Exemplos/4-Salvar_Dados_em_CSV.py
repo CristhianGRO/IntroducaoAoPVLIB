@@ -55,5 +55,3 @@ modelChain.run_model(clear_sky)
 #Salva os valores de results.ac gerados em um arquivo csv com titulo "curva_AC"
 modelChain.results.ac.to_csv('curva_AC.csv')
 plt.show()
-
-
