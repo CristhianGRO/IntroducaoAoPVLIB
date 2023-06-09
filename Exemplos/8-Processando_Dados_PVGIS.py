@@ -3,7 +3,6 @@
 #Autor: Cristhian Gabriel da Rosa de Oliveira | Departamento de Engenharia Elétrica, UFMT
 #Jun. 2023
 #==========================================================================================
-
 #Importando as bibliotecas e módulos necessários para a execução do código.
 from pvlib.location import Location
 import pandas as pd
@@ -11,12 +10,12 @@ import matplotlib.pyplot as plt
 
 #Lendo as colunas referentes a tempo, temperatura do ar, irradiância e velocidade do vento do arquivo .csv
 #Pulam-se as 16 primeiras linhas, por conterem informações que não são relevantes para o cálculo.
-tmy = pd.read_csv("IntroducaoAoPVLIB\Exemplos\TMY_FAET_UFMT.csv",skiprows=16,nrows=145,
+tmy = pd.read_csv("IntroducaoAoPVLIB\Exemplos\TMY_FAET_UFMT.csv",skiprows=16,nrows=8760,
                 usecols=["time(UTC)","T2m","G(h)","Gb(n)","Gd(h)","WS10m"],
                 index_col=0)
 
-#Selecionando os dados TMY referentes a um período desejado, nesse caso, o ano de 2019.
-tmy.index=pd.date_range(start="2019-01-01 00:00", end="2019-01-02 00:00",freq="10min")
+#Selecionando os dados TMY referentes a um período desejado, nesse caso, o ano de 2017.
+tmy.index=pd.date_range(start="2017-01-01 00:00", end="2017-12-31 23:00",freq="h")
 
 #Alterando o nome das colunas para o formato que o pvlib irá interpretar.
 tmy.columns = ["temp_air","ghi","dni","dhi","wind_speed"]
@@ -36,7 +35,7 @@ location = Location(latitude=-15.608259564142905,
                     name='FAET UFMT')
 
 #Criação de um Pandas Dataframe com os horários de início e fim da simulação, para uma dada granularidade de dados e fuso horário.
-times = pd.date_range(start="2019-01-01",end="2020-01-01",
+times = pd.date_range(start="2017-01-01 00:00", end="2017-12-31 23:00",
                     freq="1h",
                     tz=location.tz)
 
