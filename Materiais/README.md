@@ -15,6 +15,7 @@ Essa pasta contém documentos e links úteis para auxiliar no aprendizado de uso
 - [Playlist no Youtube sobre o pvlib](https://www.youtube.com/watch?v=zKzhMQaNjDI&list=PLK7k_QaEmaHsPk_mwzneTE2VTNCpYBiky&index=1)
 - [Base de dados de módulos e inversores](https://github.com/NREL/SAM/tree/develop/deploy/libraries)
 - [Consulta de Fusos Horários](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+- [TMY Generator](https://re.jrc.ec.europa.eu/pvg_tools/en/)
 
 <br><br>
 
